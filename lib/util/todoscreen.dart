@@ -14,7 +14,7 @@ class _ToDoScreenState extends State<ToDoScreen> {
   final TextEditingController _textEditingController = TextEditingController();
   var db = DatabaseHelper();
   final List<ToDoItem> _itemList = <ToDoItem>[];
-  
+
   @override
   void initState() {
     super.initState();
@@ -190,7 +190,6 @@ class _ToDoScreenState extends State<ToDoScreen> {
        _textEditingController.clear();
         _itemList.removeWhere((element) {
            _itemList[index].itemName == item.itemName;
-
         });
 
      });
